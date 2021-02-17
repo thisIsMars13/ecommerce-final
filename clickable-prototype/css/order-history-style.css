@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #675c67;
+}
+h3 {
+    margin-top: 30px; 
+    text-align: center;
+    font-size: 1.2em;
+}    
+header {
+    height: 50px;
+    width: 100%;
+    padding: 15px 25px;
+    position: relative;
+    border-bottom: 0.5px solid rgb(157, 194, 157);
+    background: #1f2a1b; 
+}    
+    header * {
+        display:inline-block;
+        vertical-align: middle;
+        margin-right: 25px;
+        text-decoration: none;
+        color: #a2afa3;
+        font-weight: bolder;
+    }
+    #shopping_cart_count {
+        margin: -3px 0 0 0 ;
+    }
+    header a:first-child {
+        font-size: 1.4em;
+        float: left;
+        margin-top:-4px;
+    }
+    header a {
+        float: right;
+    }
+body {
+    font-family: Helvetica;
+}
+    body a:hover, body a:hover span {
+        color:#8cc474;
+    }
+table {
+    border-collapse: collapse;
+    margin: 50px auto;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 2px 6px 21px -4px rgba(125,124,125,0.68);    
+}
+    thead tr {
+        background-color: lightgray;
+        font-weight: bold;
+    }
+    td, th {
+        border: 1px solid gray;
+        text-align: left;
+        padding: 8px;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }

@@ -1,0 +1,162 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #675c67;
+}
+h3 {
+    margin-top: 30px; 
+    text-align: center;
+    font-size: 1.2em;
+}    
+header {
+    height: 50px;
+    width: 100%;
+    padding: 15px 25px;
+    position: relative;
+    border-bottom: 0.5px solid rgb(157, 194, 157);
+    background: #1f2a1b; 
+}    
+    header * {
+        display:inline-block;
+        vertical-align: middle;
+        margin-right: 25px;
+        text-decoration: none;
+        color: #a2afa3;
+        font-weight: bolder;
+    }
+    #shopping_cart_count {
+        margin: -3px 0 0 0 ;
+    }
+    header a:first-child {
+        font-size: 1.4em;
+        float: left;
+        margin-top:-4px;
+    }
+    header a {
+        float: right;
+    }
+body {
+    font-family: Helvetica;
+}
+    body a:hover, body a:hover span {
+        color:#8cc474;
+    }
+table {
+    border-collapse: collapse;
+    margin: 50px auto;
+    background-color: rgb(245, 245, 245);  
+}
+    thead tr {
+        background-color: lightgray;
+        font-weight: bold;
+    }
+    td, th {
+        border: 1px solid gray;
+        text-align: left;
+        padding: 8px;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    td:nth-last-child(1){
+        background-color: white;
+        border: none;
+    }
+    td:nth-last-child(1) button{
+        background-color: #1F2A1B;
+        border: none;
+        color: white;
+        padding: 7px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+    td:nth-last-child(1) span{
+        font-style: italic;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+#leave_review{
+    display: none;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+}
+#leave_review > div{
+    padding: 10px;
+    background-color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 75vh;
+    width: 30vw;
+    border-radius: 2px;
+    overflow-y: scroll;
+}
+#leave_review > div form{
+    text-align: center;
+}
+#done_review{
+    margin-top: 20px;
+    background-color: rgb(94, 177, 94); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#leave_review div li{
+    border-bottom: 1px solid silver;
+    padding: 5px 0;
+}
+#leave_review div h1{
+    color: black;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    position: relative;
+}
+#leave_review div::-webkit-scrollbar{
+    display: none;
+}
+
+#leave_review div textarea{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5px;
+}
+#leave_review div > ul input[type="submit"]{
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+.rating {
+    text-align: center;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+.rating_form input[type="radio"]{
+    display: none;
+}
+.rating label {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+    font-size: 3rem;
+    color: rgb(248, 248, 0);
+}
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+    content: "\2605";
+    position: absolute;
+}

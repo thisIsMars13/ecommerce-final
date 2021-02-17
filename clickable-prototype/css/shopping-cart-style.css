@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #675c67;
+}
+div[role="dialog"] {
+    width:300px !important;
+}
+    div#message-dialog {
+        width: 300px;
+        text-align:center;
+        display:none;
+    }
+div[role="dialog"] button  {
+    color: transparent !important;
+    outline: none;
+}
+form#qty_form, form#delete_form {
+    display:inline-block;
+}
+.ui-widget-content {
+    background: #c9c9c9;
+    text-align: center;
+}
+header {
+    height: 50px;
+    width: 100%;
+    padding: 15px 25px;
+    position: relative;
+    border-bottom: 0.5px solid rgb(157, 194, 157);
+    background: #1f2a1b; 
+}    
+    header * {
+        display:inline-block;
+        vertical-align: middle;
+        margin-right: 25px;
+        text-decoration: none;
+        color: #a2afa3;
+        font-weight: bolder;
+    }
+    #shopping_cart_count {
+        margin: -3px 0 0 0 ;
+    }
+    header a:first-child {
+        font-size: 1.4em;
+        float: left;
+        margin-top:-4px;
+    }
+    header a {
+        float: right;
+    }
+body {
+    background-color: #e2e2e2;
+    font-family: Helvetica;
+}    
+    body>a {
+        margin:20px 150px; 
+        display: block;
+    }
+    body a:hover, body a:hover span {
+        color:#8cc474;
+    }
+section, body>form {
+    width: 70%;
+    margin: 5px auto;
+}
+section table {
+        border-collapse: collapse;
+        margin: 50px auto;
+        width: 100%;
+        box-shadow: 2px 6px 21px -4px rgba(125,124,125,0.68);    
+    }
+        thead tr {
+            background-color: lightgray;
+            font-weight: bold;
+        }
+        td, th {
+            border: 1px solid gray;
+            text-align: left;
+            padding: 8px;
+        }
+        tbody tr td {
+            background-color:white;
+        }
+        section table tbody tr td input {
+            padding-left: 20px;
+        }
+        section table tbody tr td img {
+            width: 15px;
+            vertical-align: text-bottom;
+            display: inline-block;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+        section p {
+            margin-top: -20px;
+            text-align: right;
+        }
+        section > button {
+            margin: 10px 0 0 79%;
+            width: 150px;
+            padding: 1px 2px;
+            background: rgb(78,141,132);
+            color: rgba(0, 0, 0, 0.822);
+            background: linear-gradient(0deg, rgba(78,141,132,0.9580707282913166) 43%, rgba(193,224,207,1) 93%);        padding: 3px 5px;
+        }
+        section label, p {
+            text-align: right;
+        }
+        section input[type="number"] {
+            width:50px;
+        }
+.editable-qty {
+    pointer-events: all;
+    border:1px solid black;
+}
+.non-editable-qty {
+    pointer-events: none;
+    border: none;
+    background-color:transparent;
+}
+button#update {
+    border:none;
+    outline:none;
+    background-color: transparent;
+    cursor:pointer;
+    text-decoration: underline;
+    color:mediumblue;
+}
+
+
+body > form {
+    margin-bottom: 50px;
+}
+    body > form *:not(h3) {
+        display:inline-block;
+        vertical-align: top;
+        width: 150px;
+        margin-top: 10px;
+    }
+    body > form h3 {
+        margin: 20px 0 10px 0;
+    }
+    body > form label {
+        text-align: right;
+    }
+    body > form input[type='submit'] {
+        margin: 20px 0 0 462px;
+        background: rgb(78,141,132);
+        color: rgba(0, 0, 0, 0.822);
+        background: linear-gradient(0deg, rgba(78,141,132,0.9580707282913166) 43%, rgba(193,224,207,1) 93%);        padding: 3px 5px;
+    }
+
+        
+            

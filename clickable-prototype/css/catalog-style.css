@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #675c67;
+}
+header {
+    height: 50px;
+    width: 100%;
+    padding: 15px 25px;
+    position: relative;
+    border-bottom: 0.5px solid rgb(157, 194, 157);
+    background: #1f2a1b;
+}    
+    header * {
+        display:inline-block;
+        vertical-align: middle;
+        margin-right: 25px;
+        text-decoration: none;
+        color: #a2afa3;
+        font-weight: bolder;
+    }
+    header a:first-child {
+        font-size: 1.4em;
+        float: left;
+        margin-top:-4px;
+    }
+    header a {
+        float: right;
+    }
+body {
+    background-color: #e2e2e2;
+    font-family: Helvetica;
+    color: rgba(0, 0, 0, 0.87);
+}    
+body a:hover {
+    color:#8cc474;
+}
+body > form {
+    border: 2px solid lightgray;
+    box-shadow: 2px 6px 21px -10px rgba(125,124,125,0.68);    
+    width:225px;
+    padding: 10px;
+    margin: 20px 40px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+}
+    form div {
+        width: 200px;
+        border-radius: 10px;
+        border: 1px solid gray;
+        padding: 5px;
+    }    
+        form div img {
+            width:12px; 
+            vertical-align:baseline;
+        }
+        form div input, nav div input:focus {
+            border: none;
+            outline: none;
+        }
+    form ul {
+        margin-top: 15px;
+        line-height: 20px;
+        list-style-type: none;
+    }
+    form ul strong {
+        display: block;
+        margin-bottom: 5px;
+    }
+    form ul li {
+        margin-left: 10px;
+        margin-bottom: 2px;
+        font-size: 15px;
+    }
+    form ul li:last-child {
+        font-size: 12px;
+    }
+    form ul li a {
+        text-decoration: none;
+    }
+main {
+    width: 65%;    
+    background-color: rgb(245, 245, 245);
+    box-shadow: 2px 6px 21px -4px rgba(125,124,125,0.68);    
+    position: relative;
+    padding: 18px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+    main nav, main form {
+        right: 10px;
+        position: absolute;
+    }
+    main nav, main h2 {
+        display: inline-block;
+        vertical-align: top;
+    }
+    main nav a, main nav span {
+        padding: 5px;
+        border-right: 1px solid black;
+    }
+    main nav a:last-child {
+        border-right: none;
+    }
+    main section figure{
+        text-align: center;
+        width: 100px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 35px 5px -5px 15px;
+        position:relative;
+    }
+        main section figure a {
+            text-decoration: none;
+            color: #000000a4;
+        }
+        main section figure a img {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(240, 238, 238, 0.911);
+            border: 1px solid lightgray;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+            main section figure a img:hover {
+                border: 1px solid gray;
+            }
+        main section figure a p {
+            width: 100px;
+            height: 20px;
+            position: absolute;
+            bottom: 22px;
+            padding-right:5px;
+            background-color:rgba(147, 175, 46, 0.65);
+            text-align: right;
+            border: 1px solid lightgray;            
+            border-top: none;
+            color:#000000cf;
+        }
+        main section figure a figcaption {
+            overflow: hidden;
+            text-overflow: ellipsis; 
+            white-space: nowrap;
+        }
+    main footer {        
+        margin: 40px 0 1px 0;
+        text-align: center;
+    }
+        main footer a {
+            border-right: 1px solid black;
+            padding: 3px;
+        }
+        main footer a:last-child {
+            border-right: none;
+        }

@@ -1,0 +1,1 @@
+<?=  'All Products (page ' . $curr_page . ')' ?> 

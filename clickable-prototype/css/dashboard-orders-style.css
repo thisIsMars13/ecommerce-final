@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header {
+    height: 55px;
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    border-bottom: 0.5px solid rgb(157, 194, 157);
+    background: rgb(38, 2, 53);
+}    
+    header * {
+        display:inline-block;
+        vertical-align: middle;
+        margin-right: 25px;
+        text-decoration: none;
+        color: rgba(135, 165, 179, 0.945);
+        font-weight: bolder;
+    }
+    header h2 {
+        font-size: 1.4em;
+    }
+    header a:last-child {
+        position: absolute;
+        top: 20px;
+        right: 5%;
+    }
+body {
+    background-color: #e2e2e2;
+    font-family: Helvetica;
+}    
+    body * {
+        color: #675c67;
+    }
+    body header a, body header h2 {
+        color: rgba(135, 165, 179, 0.945);
+    }
+    body a:hover {
+        color: #8cc474;
+    }       
+nav {
+    position: relative;
+    top: 20px;
+}
+    nav div {
+        width: 200px;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px;
+        background-color:white;
+        margin-left: 5%;
+    }    
+        nav div img {
+            width:12px; 
+            vertical-align:baseline;
+        }
+        nav div input, nav div input:focus {
+            border: none;
+            outline: none;
+        }
+    nav select {
+        position: absolute;
+        right: 10%;
+        top: 0px;
+    }
+table {
+    border-collapse: collapse;
+    margin: 50px auto;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 2px 6px 21px -4px rgba(125,124,125,0.68);    
+}
+    thead tr {
+        background-color: lightgray;
+        font-weight: bold;
+    }
+    td, th {
+        border: 1px solid gray;
+        text-align: left;
+        padding: 8px;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+footer {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+    footer a {
+        border-right: 1px solid black;
+        padding: 3px;
+    }
+    footer a:last-child {
+        border-right: none;
+    }

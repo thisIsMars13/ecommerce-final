@@ -1,0 +1,280 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.ui-widget-content {
+    background: #c9c9c9 !important;
+}
+.loader-dialog {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    z-index: 100;
+    display:none;
+    margin: 0;
+}
+.loader-dialog img {
+    position: relative;
+    left:30%;
+    top: 15%;
+}
+header {
+    height: 55px;
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    border-bottom: 0.5px solid rgb(157, 194, 157);
+    background: rgb(38, 2, 53);
+}    
+    header * {
+        display:inline-block;
+        vertical-align: middle;
+        margin-right: 25px;
+        text-decoration: none;
+        color: rgba(135, 165, 179, 0.945);
+        font-weight: bolder;
+    }
+    header h2 {
+        font-size: 1.4em;
+    }
+    header a:last-child {
+        position: absolute;
+        top: 20px;
+        right: 5%;
+    }
+body {
+    background-color: #e2e2e2;
+    font-family: Helvetica;
+}    
+    body * {
+        color: #675c67;
+    }
+    body header a, body header h2 {
+        color: rgba(135, 165, 179, 0.945);
+    }
+    body a:hover {
+        color: #8cc474;
+    }         
+nav {
+    position: relative;
+    top: 20px;
+}
+    nav div {
+        width: 200px;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px;
+        margin-left: 5%;
+        background-color: white;
+    }    
+        nav div img {
+            width:12px; 
+            vertical-align:baseline;
+        }
+        nav div input, nav div input:focus {
+            border: none;
+            outline: none;
+        }
+        nav button {
+            padding: 2px 5px;
+            position: absolute;
+            right: 10%;
+            top: 0px;
+            color: rgba(0, 0, 0, 0.829);
+            background: linear-gradient(0deg, rgba(78,141,132,0.9580707282913166) 43%, rgba(193,224,207,1) 93%);        padding: 3px 5px;
+            color: rgba(0, 0, 0, 0.719);
+        }
+
+div[role="dialog"] {
+    width:400px !important;
+}
+    div#image-preview-dialog img {
+        width: 400px;
+    }
+div[role="dialog"] button  {
+    color: transparent;
+    outline: none;
+}
+
+div.form-dialog {
+    width: 350px !important;
+    padding: 10px 15px 20px 10px;  
+}
+div.form-dialog form {
+    width: 330px;
+    height: 100%;
+}
+    div.form-dialog form * {
+        display:inline-block;
+        vertical-align: top;
+        width: 160px;
+        margin-top: 10px;
+    }
+    div.form-dialog form label, p {
+        text-align: right;
+    }
+    div.form-dialog form p + label{
+        display: inline-block;
+        background: linear-gradient(0deg, rgba(78,141,132,0.9580707282913166) 43%, rgba(193,224,207,1) 93%);        padding: 3px 5px;
+        color: rgba(0, 0, 0, 0.719);
+        padding: 0.2rem;
+        font-family: sans-serif;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        font-size: 13px;
+        text-align: center;
+        width: 80px;
+      }
+    div.form-dialog form input[type="file"] {
+        display: none;
+    }
+    div.form-dialog form details {
+        background-color: white;
+    }
+        div.form-dialog form details summary {
+            border: 1px solid black;
+            position:relative;
+            margin-top: -1px;
+            outline:none;
+        }
+            div.form-dialog form details *:hover {
+                cursor: pointer;
+            }
+            div.form-dialog form details summary::-webkit-details-marker {
+                display: none;
+            }
+            div.form-dialog form details summary span {
+                border: 0.5px solid black;
+                width:20px;
+                height: 22px;
+                margin-top: -1px;
+                position: absolute;
+                right: 0;
+                text-align: center;
+            }
+            div.form-dialog form details div {
+                border: 1px solid black;
+                margin-top: 0px;
+                padding:2px;
+                overflow: hidden;
+                max-height: 150px;
+            }
+                div.form-dialog form details div section {
+                    margin-top: 0px;
+                }
+                    div.form-dialog form details div section input{
+                        border:1px solid black;
+                        width: 110px;
+                        margin-top: 1px;
+                    }
+                    div.form-dialog form details div section:hover * {
+                        visibility: visible;
+                        cursor: pointer;
+                    }         
+                    div.form-dialog form details div section img{
+                        width:16px;
+                        position:relative;
+                        top: -7px;
+                        visibility: hidden;
+                    }
+                        div.form-dialog form details div section input[readonly] {
+                            border:none;
+                            outline:none;
+                        }       
+    div.form-dialog form ul {
+        display: block;
+        margin-left: 70px;
+        cursor: grab;
+        font-size: 16px;
+    }
+        div.form-dialog form ul li {
+            width: 250px;
+            margin:0;
+            padding-bottom: 7px;
+        }
+        div.form-dialog form ul li img:nth-of-type(1), div.form-dialog form ul li img:nth-of-type(2) {
+            width: 20px;
+        }
+        div.form-dialog form ul li p {
+            display: inline-block;
+            vertical-align: bottom;
+            width: 80px;
+            text-align:left;
+        }
+        div.form-dialog form ul li img:nth-of-type(3) {
+            width: 15px;
+            vertical-align: bottom;
+            margin-left:10px;
+            margin-bottom: 3px;
+            cursor:pointer;
+        }
+        div.form-dialog form ul li input {
+            margin-bottom: 2px;
+        }
+        div.form-dialog form ul li > input, form ul li > label {
+            vertical-align: bottom;
+            width: 10px;
+        }
+        div.form-dialog form ul li label{
+            width: 0px;
+            vertical-align: bottom;
+        }
+    div.form-dialog form ul ~ input, div.form-dialog form ul ~ button {
+        width: 70px;
+        margin-top: 25px;
+        background: linear-gradient(0deg, rgba(78,141,132,0.9580707282913166) 43%, rgba(193,224,207,1) 93%);        padding: 3px 5px;
+        color: rgba(0, 0, 0, 0.719);
+        font-size: 13px;
+    } 
+    div.form-dialog form input[type="text"] {
+        vertical-align: bottom;
+    }
+    #cancel {
+        margin-left: 75px;
+    }
+
+
+table {
+    border-collapse: collapse;
+    margin: 50px auto;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 2px 6px 21px -4px rgba(125,124,125,0.68);    
+}
+    table tbody tr td img {
+        width:30px; 
+        display: block;
+        margin: 0 auto;
+    }
+    thead tr {
+        background-color: lightgray;
+        font-weight: bold;
+    }
+    td, th {
+        border: 1px solid gray;
+        text-align: left;
+        padding: 8px;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    table button {
+        border:none;
+        outline:none;
+        background-color: transparent;
+        cursor:pointer;
+        text-decoration: underline;
+        color:mediumblue;
+    }
+footer {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+    footer a {
+        border-right: 1px solid black;
+        padding: 3px;
+    }
+    footer a:last-child {
+        border-right: none;
+    }

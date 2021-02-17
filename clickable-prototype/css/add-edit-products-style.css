@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+div {
+    width: 40%;
+}
+div header {
+    position: relative;
+}
+    div header button {
+        position: absolute;
+        right: 10px;
+        top: 0px;
+        padding: 3px;
+    }
+form {
+    width: 400px;
+    height: 150px;
+}
+    form * {
+        display:inline-block;
+        vertical-align: top;
+        width: 150px;
+        margin-top: 10px;
+    }
+    form label, p {
+        text-align: right;
+    }
+    form p + label{
+        display: inline-block;
+        background-color: rgba(10, 152, 247, 0.74);
+        padding: 0.2rem;
+        font-family: sans-serif;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        font-size: 12px;
+        text-align: center;
+        width: 80px;
+      }
+    form input[type="file"] {
+        display: none;
+    }
+
+
+    form details summary {
+        border: 1px solid black;
+        position:relative;
+        margin-top: -1px;
+    }
+        form details summary::-webkit-details-marker {
+            display: none;
+        }
+        form details summary:hover {
+            cursor: pointer;
+        }
+        form details summary span {
+            border: 0.5px solid black;
+            width:20px;
+            height: 20px;
+            margin-top: -1px;
+            position: absolute;
+            right: 0;
+            text-align: center;
+        }
+        form details div {
+            border: 1px solid black;
+            margin-top: 0px;
+            padding:2px;
+        }
+            form details div input{
+                border:none;
+                outline:none;
+                width: 110px;
+                margin-top: 1px;
+            }
+            form details div input:hover{
+                background-color: lightgray;
+            }
+            form details div img{
+                width:12px;
+                position:relative;
+                top: -9px;
+                /* visibility: hidden;*/
+            }
+    form ul {
+        display: block;
+        margin-left: 70px;
+    }
+        form ul li {
+            width: 250px;
+            margin:0;
+        }
+        form ul li img:nth-of-type(1), form ul li img:nth-of-type(2) {
+            width: 30px;
+        }
+        form ul li p {
+            display: inline-block;
+            vertical-align: bottom;
+            width: 80px;
+            text-align:left;
+        }
+        form ul li img:nth-of-type(3) {
+            width: 20px;
+            vertical-align: bottom;
+            margin-right:10px;
+        }
+        form ul li > input, form ul li > label {
+            vertical-align: bottom;
+            width: 10px;
+        }
+        form ul li label{
+            margin-bottom: -3px;
+        }
+    form ul ~ input, form ul ~ button {
+        width: 70px;
+        margin-top: 25px;
+    } 
+    form ul + input {
+        margin-left: 75px;
+    }

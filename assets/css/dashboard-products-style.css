@@ -1,0 +1,524 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.ui-widget-content {
+    background: #c9c9c9 !important;
+}
+.loader-dialog {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    z-index: 100;
+    display:none;
+    margin: 0;
+}
+.loader-dialog img {
+    position: relative;
+    left:30%;
+    top: 15%;
+}
+header {
+    height: 55px;
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    border-bottom: 0.5px solid rgb(157, 194, 157);
+    background: rgb(38, 2, 53);
+}    
+    header * {
+        display:inline-block;
+        vertical-align: middle;
+        margin-right: 25px;
+        text-decoration: none;
+        color: rgba(135, 165, 179, 0.945);
+        font-weight: bolder;
+    }
+    header h2 {
+        font-size: 1.4em;
+    }
+    header a:last-child {
+        position: absolute;
+        top: 20px;
+        right: 5%;
+    }
+body {
+    background-color: #e2e2e2;
+    font-family: Helvetica;
+}    
+    body * {
+        color: #675c67;
+    }
+    body header a, body header h2 {
+        color: rgba(135, 165, 179, 0.945);
+    }
+    body a:hover {
+        color: #8cc474;
+    }         
+nav {
+    position: relative;
+    top: 20px;
+}
+    nav div {
+        width: 200px;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px;
+        margin-left: 5%;
+        background-color: white;
+    }    
+        nav div img {
+            width:12px; 
+            vertical-align:baseline;
+        }
+        nav div input, nav div input:focus {
+            border: none;
+            outline: none;
+        }
+        nav button {
+            padding: 2px 5px;
+            position: absolute;
+            right: 10%;
+            top: 0px;
+            color: rgba(0, 0, 0, 0.829);
+            background: linear-gradient(0deg, rgba(78,141,132,0.9580707282913166) 43%, rgba(193,224,207,1) 93%);        padding: 3px 5px;
+            color: rgba(0, 0, 0, 0.719);
+        }
+
+div[role="dialog"] {
+    width:400px !important;
+}
+    div#image-preview-dialog img {
+        width: 400px;
+    }
+div[role="dialog"] button  {
+    color: transparent;
+    outline: none;
+}
+
+div.form-dialog {
+    width: 350px !important;
+    padding: 10px 15px 20px 10px;  
+}
+div.form-dialog form {
+    width: 330px;
+    height: 100%;
+}
+    div.form-dialog form * {
+        display:inline-block;
+        vertical-align: top;
+        width: 160px;
+        margin-top: 10px;
+    }
+    div.form-dialog form label, p {
+        text-align: right;
+    }
+    div.form-dialog form p + label{
+        display: inline-block;
+        background: linear-gradient(0deg, rgba(78,141,132,0.9580707282913166) 43%, rgba(193,224,207,1) 93%);        padding: 3px 5px;
+        color: rgba(0, 0, 0, 0.719);
+        padding: 0.2rem;
+        font-family: sans-serif;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        font-size: 13px;
+        text-align: center;
+        width: 80px;
+      }
+    div.form-dialog form input[type="file"] {
+        display: none;
+    }
+    div.form-dialog form details {
+        background-color: white;
+    }
+        div.form-dialog form details summary {
+            border: 1px solid black;
+            position:relative;
+            margin-top: -1px;
+            outline:none;
+        }
+            div.form-dialog form details *:hover {
+                cursor: pointer;
+            }
+            div.form-dialog form details summary::-webkit-details-marker {
+                display: none;
+            }
+            div.form-dialog form details summary span {
+                border: 0.5px solid black;
+                width:20px;
+                height: 22px;
+                margin-top: -1px;
+                position: absolute;
+                right: 0;
+                text-align: center;
+            }
+            div.form-dialog form details div {
+                border: 1px solid black;
+                margin-top: 0px;
+                padding:2px;
+                overflow: hidden;
+                max-height: 150px;
+            }
+                div.form-dialog form details div section {
+                    margin-top: 0px;
+                }
+                    div.form-dialog form details div section input{
+                        border:1px solid black;
+                        width: 110px;
+                        margin-top: 1px;
+                    }
+                    div.form-dialog form details div section:hover * {
+                        visibility: visible;
+                        cursor: pointer;
+                    }         
+                    div.form-dialog form details div section img{
+                        width:16px;
+                        position:relative;
+                        top: -7px;
+                        visibility: hidden;
+                    }
+                        div.form-dialog form details div section input[readonly] {
+                            border:none;
+                            outline:none;
+                        }       
+    div.form-dialog form ul {
+        display: block;
+        margin-left: 70px;
+        cursor: grab;
+        font-size: 16px;
+    }
+        div.form-dialog form ul li {
+            width: 250px;
+            margin:0;
+            padding-bottom: 7px;
+        }
+        div.form-dialog form ul li img:nth-of-type(1), div.form-dialog form ul li img:nth-of-type(2) {
+            width: 20px;
+        }
+        div.form-dialog form ul li p {
+            display: inline-block;
+            vertical-align: bottom;
+            width: 80px;
+            text-align:left;
+        }
+        div.form-dialog form ul li img:nth-of-type(3) {
+            width: 15px;
+            vertical-align: bottom;
+            margin-left:10px;
+            margin-bottom: 3px;
+            cursor:pointer;
+        }
+        div.form-dialog form ul li input {
+            margin-bottom: 2px;
+        }
+        div.form-dialog form ul li > input, form ul li > label {
+            vertical-align: bottom;
+            width: 10px;
+        }
+        div.form-dialog form ul li label{
+            width: 0px;
+            vertical-align: bottom;
+        }
+    div.form-dialog form ul ~ input, div.form-dialog form ul ~ button {
+        width: 70px;
+        margin-top: 25px;
+        background: linear-gradient(0deg, rgba(78,141,132,0.9580707282913166) 43%, rgba(193,224,207,1) 93%);        padding: 3px 5px;
+        color: rgba(0, 0, 0, 0.719);
+        font-size: 13px;
+    } 
+    div.form-dialog form input[type="text"] {
+        vertical-align: bottom;
+    }
+    #cancel {
+        margin-left: 75px;
+    }
+
+
+table {
+    border-collapse: collapse;
+    margin: 50px auto;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 2px 6px 21px -4px rgba(125,124,125,0.68);    
+}
+    table tbody tr td img {
+        width:30px; 
+        display: block;
+        margin: 0 auto;
+    }
+    thead tr {
+        background-color: lightgray;
+        font-weight: bold;
+    }
+    td, th {
+        border: 1px solid gray;
+        text-align: left;
+        padding: 8px;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    table button {
+        border:none;
+        outline:none;
+        background-color: transparent;
+        cursor:pointer;
+        text-decoration: underline;
+        color:mediumblue;
+    }
+footer {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+footer ul li{
+    list-style: none;
+    display: inline-block;
+}
+footer ul li label{
+    padding: 5px 10px 5px 10px;
+    transition: .2s all ease;
+}
+
+input[type="radio"]:checked ~ label{
+    border:none;
+    background-color: #260235;
+    color:white;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#category_btn{
+    color:black;
+}
+.dropdown-content {
+    display: none !important;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.show {
+    display: block !important;
+}
+.dropdown-content div > p {
+    color: black;
+    padding: 5px;
+    display: inline-block;
+    text-align: left;
+    width: 60%;
+    margin:0;
+}
+.dropdown-content > div img {
+    vertical-align: top;
+    float: right;
+    max-height: 100%;
+    width: 15%;
+    margin: 0;
+}
+
+#question_notif{
+    cursor: pointer;
+    position: relative;
+}
+#question_notif span{
+    margin: 0;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    padding: 1px 4px;
+    background-color: red;
+    border-radius: 2px;
+    color: white;
+}
+#customer_questions{
+    display: none;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+}
+#customer_questions div{
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 75vh;
+    width: 30vw;
+    border-radius: 2px;
+    overflow-y: scroll;
+}
+#customer_questions div::-webkit-scrollbar{
+    display: none;
+}
+#customer_questions div h1{
+    color: black;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    position: relative;
+}
+#customer_questions div li{
+    border-bottom: 1px solid silver;
+    padding: 5px 0;
+}
+#customer_questions div p{
+    color: black;
+    margin-bottom: 5px;
+    text-align: left;
+}
+#customer_questions div > span{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 2px 5px;
+    display: inline-block;
+    background-color: #999;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#customer_questions div p > span{
+    padding: 5px 10px;
+    display: inline-block;
+    background-color: rgb(38, 2, 53);
+    color: white;
+    border-radius: 2px;
+}
+#customer_questions div textarea{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5px;
+}
+#customer_questions div input{
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+#notification{
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+}
+#notification > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(224, 224, 224);
+    border: 2px solid black;
+    width: 25vw;
+}
+#notification > div h3{
+    background-color: #260235;
+    color: white;
+}
+#notification > div p{
+    color: black;
+    margin: 10px 0;
+    text-align: center;
+}
+#notification > div #close_btn{
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 3px;
+    cursor: pointer;
+}
+#previews{
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+#previews > span{
+    position: absolute;
+    color: white;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+main {
+    padding: 10px;
+    background-color: white;
+    margin: 30px 100px;
+    position: absolute;
+    width: 75vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+}
+    main span i{
+        color: goldenrod;
+    }
+    main a{
+        display: block;
+    }
+    main h1 {
+        display: inline-block;
+        margin: 10px 0 5px 0 ;
+    }
+    main > div p{
+        display: inline-block;
+    }
+    main figure {
+        display: inline-block;
+        vertical-align: top;
+        width: 220px;
+        margin-right: 20px;
+    }
+        main figure img {
+            width: 40px;
+            border: 1px solid lightgray;
+        }
+        main figure img:first-of-type {
+            width: 217px;
+            height: 100%; 
+            margin-bottom: 10px;
+        }
+    main > p{
+        background-color: rgb(245, 245, 245);
+        display: inline-block;
+        vertical-align: top;
+        text-align: justify;
+        width: 67%;
+        padding: 10px;
+        line-height: 30px;
+    }
+    main form {
+        float: right;
+    }
+    main form input[type="number"] {
+        width: 50px;
+        padding: 2px;
+    }
+    main form button {
+        background: linear-gradient(0deg, rgba(78,141,132,0.9580707282913166) 43%, rgba(193,224,207,1) 93%);
+        padding: 3px 5px;      
+        color: rgba(0, 0, 0, 0.678);
+        pointer-events: none;
+    }
